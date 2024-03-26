@@ -36,7 +36,7 @@ def process_file(raw_file):  # Cleans the data
         line = line.replace(',', '')
         line = line.replace('&', '')
         line = line.replace('👦', '')
-        line = line.replace('\d+', '')
+        #line = line.replace('\d+', '')
 
         corpus.append(line.lower())
 
