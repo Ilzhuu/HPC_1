@@ -2,11 +2,11 @@ Lai palaistu kodu biežāk sastopamo vārdu iegūšanai ar noteiktiem sākumburt
 
 _python Text_predictor.py arg1 arg2 arg3_
 
-kur python - interpretators programmas koda palaišanai/n
-    Text_predictor.py - programmas koda datnes nosaukums
-    arg1 - teksta korpusa nosaukums
-    arg2 - meklējamie sākumburti
-    arg3 - pilna vai nepilna teksa korpusa izmantošanas indikators
+kur python - interpretators programmas koda palaišanai,
+    Text_predictor.py - programmas koda datnes nosaukums,
+    arg1 - teksta korpusa nosaukums,
+    arg2 - meklējamie sākumburti,
+    arg3 - pilna vai nepilna teksa korpusa izmantošanas indikators.
 
 Piemēram:
 
