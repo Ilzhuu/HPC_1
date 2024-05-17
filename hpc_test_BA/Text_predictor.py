@@ -1,5 +1,3 @@
-#! which python
-
 import pandas as pd
 import sys
 import time
@@ -56,7 +54,7 @@ def vectorize(corpus):
     tf_transformer = TfidfTransformer(use_idf=False).fit(x2)  # Creating the transformer instance
     x2_tf = tf_transformer.transform(x2)  # Applying the transformer
 
-    unique_words = vectorizer2.get_feature_names_out()  # Getting unique words in a separate list for conveniece
+    unique_words = vectorizer2.get_feature_names_out()  # Getting unique words in a separate list for convenience
 
     lst = []
     for i in range(0, len(unique_words)):  # Filling the data frame with data Unique word, Frequency
