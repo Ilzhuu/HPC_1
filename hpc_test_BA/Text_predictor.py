@@ -1,3 +1,4 @@
+
 import pandas as pd
 import sys
 import time
@@ -34,7 +35,6 @@ def process_file(raw_file):  # Cleans the data
         line = line.replace(',', '')
         line = line.replace('&', '')
         line = line.replace('👦', '')
-        #line = line.replace('\d+', '')
 
         corpus.append(line.lower())
 
@@ -70,9 +70,9 @@ def vectorize(corpus):
     return word_use_df
 
 
-def predict(query, word_use_df):  # veic ticamāko vārdu prognozēšanu, balstoties uz lietotāja ievadi
+def predict(query, word_use_df):  # Predicts 10 most common words, based on use query term
     output = word_use_df[word_use_df.Words.str.startswith(query)]  # Selecting matching words
-    print(output['Words'].head(10).values)  # Selecting the top frequent one
+    print(output['Words'].head(10).values)  # Selecting the 10 top frequent
 
 
 def main():
